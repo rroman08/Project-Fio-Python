@@ -32,3 +32,10 @@ def str_to_int(s: str) -> int:
     return functools.reduce(
         lambda running_sum, c: running_sum * 10 + string.digits.index(c),
         s[s[0] == '-':], 0) * (-1 if s[0] == '-' else 1)  # Note that s[0] == '-' is a bool
+
+
+if __name__ == '__main__':
+    print(str_to_int('123'))
+    print(int_to_str(123))
+    print(str_to_int_long('123'))
+    
